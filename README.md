@@ -46,21 +46,9 @@ if (randomIndex === userGuess) {
         incorrectGuesses++;
     }
 
-
-
-
 | On clicking the correct hiding place button, the total number of correct guesses increment           |   2 |
 
-
-
-
-
-
 | On clicking the incorrect hiding place button, the number of incorrect guesses increments            |   2 |
-
-
-
-
 
 | On click, see the correct hiding place's image change, clearing out the previous correct guess style |   4 |
 
