@@ -3,9 +3,9 @@ const shedButton = document.getElementById('shed-button');
 const treeButton = document.getElementById('tree-button');
 const boulderButton = document.getElementById('boulder-button');
 
-// const shedContainer = document.getElementById('shed-container');
-// const treeContainer = document.getElementById('tree-container');
-// const boulderContainer = document.getElementById('boulder-container');
+const shedContainer = document.getElementById('shed-container');
+const treeContainer = document.getElementById('tree-container');
+const boulderContainer = document.getElementById('boulder-container');
 
 const totalEl = document.getElementById('total');
 const lossesEl = document.getElementById('losses');
