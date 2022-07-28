@@ -38,6 +38,11 @@ boulderButton.addEventListener('click', () => {
 
 function handleGuess(correctSpot, userGuess) {
     // reset the styles
+    shedContainer.classList.remove('face');
+    treeContainer.classList.remove('face');
+    boulderContainer.classList.remove('face');
+
+
     // then increment the guesses
     totalGuesses++;
     totalEl.textContent = totalGuesses;
@@ -58,6 +63,8 @@ function handleGuess(correctSpot, userGuess) {
         lossesEl.textContent = (totalGuesses - correctGuesses);
     }
 
-
+    shedButton.disable = true;
+    treeButton.disable = true;
+    boulderButton.disable = true;
+    
 }
-
