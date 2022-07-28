@@ -63,8 +63,4 @@ function handleGuess(correctSpot, userGuess) {
         lossesEl.textContent = (totalGuesses - correctGuesses);
     }
 
-    shedButton.disable = true;
-    treeButton.disable = true;
-    boulderButton.disable = true;
-    
 }
