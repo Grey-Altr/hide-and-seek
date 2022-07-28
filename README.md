@@ -36,9 +36,35 @@ Look closely at the HTML provided for you. When you add a class called `face` to
 | Task                                                                                                 |     |
 | :--------------------------------------------------------------------------------------------------- | --: |
 | On clicking a hiding place button, the total number of guesses increment                             |   2 |
+
+if (randomIndex === userGuess) {
+    // 4) update the scores in state: (update state)
+    //   - if the user guessed correct, increment correct guesses
+        correctGuesses++;
+    } else {
+        //   - if t he user guessed incorrect, increment incorrect guesses
+        incorrectGuesses++;
+    }
+
 | On clicking the correct hiding place button, the total number of correct guesses increment           |   2 |
+
 | On clicking the incorrect hiding place button, the number of incorrect guesses increments            |   2 |
+
 | On click, see the correct hiding place's image change, clearing out the previous correct guess style |   4 |
+
+ resultsEl.textContent = `You guessed correctly ${correctGuesses} time(s) and incorrectly ${incorrectGuesses} time(s).`;
+
+    // 6) disable the guess buttons
+    buttonOne.disabled = true;
+    buttonTwo.disabled = true;
+    buttonThree.disabled = true;
+}
+
+
+
+
+
+
 
 ### Ideas for stretch goals 
 - Add a hard reset button that clears all wins, losses, and total
